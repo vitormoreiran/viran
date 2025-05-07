@@ -1,84 +1,150 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-  <title>Viran — Consultoria Criativa</title>
-  <meta name="description" content="Consultoria criativa em arte, tecnologia e design. Agende sua conversa gratuita com Viran." />
-  <!-- Google Fonts substitutes for visual identity -->
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="description" content="Consultorias criativas com Viran: arte, tecnologia e design com impacto real." />
+  <title>VIRAN – Consultorias</title>
+  <link rel="preload" href="font/MonumentGrotesk-Bold.woff" as="font" type="font/woff" crossorigin>
   <link rel="stylesheet" href="style.css" />
-  <!-- Favicon or logo here -->
 </head>
 <body>
+  <div class="background">
+    <div class="base-color"></div>
+    <video class="background-video" autoplay muted loop playsinline>
+      <source src="loop.mp4" type="video/mp4">
+    </video>
+  </div>
+
   <main>
-    <!-- Hero Section -->
-    <header class="hero">
-      <img src="poster.jpg" alt="Viran Poster" class="hero__poster" />
-      <div class="hero__content">
-        <h1>Consultoria Criativa Viran</h1>
-        <p class="hero__subtitle">
-          Direção criativa, identidade visual, experiências interativas — para quem busca ir além do óbvio.
+
+    <!-- SESSÃO 1 – HERO -->
+    <section class="section s1" data-tone="--tone-1">
+      <div class="layer color-layer color-1"></div>
+      <div class="content">
+        <h1 class="title">Oi! Eu sou Viran.</h1>
+        <p class="text">
+          Diretor Criativo há mais de 5 anos, especialista em tecnologias emergentes, 
+          crio experiências visuais que vão além do óbvio e geram impacto real.
         </p>
-        <a href="https://calendly.com/vitormoreiran" target="_blank" class="btn btn--cta">
-          Agende sua conversa gratuita
+        <a class="cta" href="https://calendly.com/vitormoreiran" target="_blank">
+          Agende sua conversa grátis
         </a>
       </div>
-    </header>
-    <!-- Why Section -->
-    <section class="why">
-      <h2>Por que conversar com Viran?</h2>
-      <ul>
-        <li>Consultoria personalizada para estudantes e interessados em arte, tecnologia e design.</li>
-        <li>Direção criativa, dicas práticas, referências, montagem de portfólio e visão de futuro.</li>
-        <li>Crie, expanda e conecte seu projeto a novas possibilidades.</li>
-      </ul>
     </section>
-    <!-- Services Section -->
-    <section class="services">
-      <h2>O que você pode obter?</h2>
-      <div class="services__list">
-        <div class="service-card">
-          <h3>PDFs & Referências</h3>
-          <p>Materiais práticos para começar e se aprofundar.</p>
-        </div>
-        <div class="service-card">
-          <h3>Consultoria de Projetos</h3>
-          <p>Referências, processos criativos, escolhas estratégicas.</p>
-        </div>
-        <div class="service-card">
-          <h3>Portfólio & Narrativa</h3>
-          <p>Construa uma apresentação que conte sua história e destaque seu diferencial.</p>
-        </div>
-        <div class="service-card">
-          <h3>Aulas Práticas</h3>
-          <p>3D, Photoshop, Figma, Premiere, TouchDesigner, IA.</p>
-        </div>
-        <div class="service-card">
-          <h3>Tendências & Futuro</h3>
-          <p>Mercado, tecnologia, arte & inteligência: perspectivas e estudos.</p>
+
+    <!-- SESSÃO 2 – SOBRE & LINKS -->
+<section class="section s2" data-tone="--tone-2">
+  <div class="layer color-layer color-2"></div>
+  <div class="content">
+    <div class="text-block">
+      <h2 class="title">Por que consultoria?</h2>
+      <p class="text">
+        Estou abrindo horários para estudantes e criativos iniciantes que querem evitar perrengues 
+        e aprender de forma prática tudo o que já tive que descobrir na marra.
+      </p>
+    </div>
+    <div class="text-block">
+      <h2 class="title">Conheça meus projetos</h2>
+      <div class="project-cards">
+        <a href="https://zora.co/vitormoreiran" target="_blank" class="project-card">
+          <img src="thumb-zora.png" alt="Zora – Vitor Moreira">
+          <span>Zora</span>
+        </a>
+        <a href="https://vimeo.com/vitormoreiran" target="_blank" class="project-card">
+          <img src="thumb-vimeo.png" alt="Vimeo – Vitor Moreira">
+          <span>Vimeo</span>
+        </a>
+       
+        <a href="https://behance.com/vitormoreiran" target="_blank" class="project-card">
+          <img src="thumb-behance.png" alt="Behance – Vitor Moreira">
+          <span>Behance</span>
+        </a>
+        <a href="https://vitormoreiran.github.io/portfolio" target="_blank" class="project-card">
+          <img src="thumb-portfolio.png" alt="Portfolio – Vitor Moreira">
+          <span>Portfolio</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- SESSÃO 3 – SERVIÇOS -->
+    <section class="section s3" data-tone="--tone-3">
+      <div class="layer color-layer color-3"></div>
+      <div class="content">
+        <h2 class="title">O que podemos fazer juntos?</h2>
+        <div class="cards">
+          <div class="card">
+            <h3>📄 PDF de Conceitos & Atalhos</h3>
+            <p>Reúno referências, links e ferramentas essenciais para você começar com clareza.</p>
+          </div>
+          <div class="card">
+            <h3>🎨 Consultoria de Projeto</h3>
+            <p>Apoio na definição de conceito, pesquisa de referências e escolhas estratégicas.</p>
+          </div>
+          <div class="card">
+            <h3>📁 Portfólio com História</h3>
+            <p>Montamos juntos uma narrativa visual que destaque seus projetos e sua trajetória.</p>
+          </div>
+          <div class="card">
+            <h3>🧰 Aulas Práticas</h3>
+            <p>Hands-on em 3D, Photoshop, Figma, Premiere, TouchDesigner e IA—do zero à aplicação.</p>
+          </div>
+          <div class="card">
+            <h3>🎤 Apresentações & Discurso</h3>
+            <p>Estratégias de storytelling para você comunicar suas ideias com confiança.</p>
+          </div>
+          <div class="card">
+            <h3>🧭 Tendências & Futuro</h3>
+            <p>Visão sobre mercado, tecnologia, arte e inteligência para inspirar seus próximos passos.</p>
+          </div>
         </div>
       </div>
     </section>
-    <!-- Links Section -->
-    <section class="links">
-      <h2>Veja mais projetos</h2>
-      <ul>
-        <li><a href="https://zora.co/vitormoreiran" target="_blank">Zora</a></li>
-        <li><a href="https://vimeo.com/vitormoreiran" target="_blank">Vimeo</a></li>
-        <li><a href="https://instagram.com/vitormoreiran" target="_blank">Instagram</a></li>
-        <li><a href="https://behance.com/vitormoreiran" target="_blank">Behance</a></li>
-        <li><a href="https://vitormoreiran.github.io/portfolio" target="_blank">Portfolio</a></li>
-      </ul>
+
+    <!-- SESSÃO 4 – CTA FINAL -->
+    <section class="section s4" data-tone="--tone-4">
+      <div class="layer color-layer color-4"></div>
+      <div class="content">
+        <h2 class="title">Vamos conversar?</h2>
+        <p class="text">
+          A agenda está aberta e a primeira sessão é totalmente gratuita. 
+          Escolha seu horário e comece já.
+        </p>
+        <a class="cta" href="https://calendly.com/vitormoreiran" target="_blank">
+          Agende sua sessão grátis
+        </a>
+      </div>
     </section>
-    <!-- Footer -->
-    <footer class="footer">
-      <p>
-        Estúdio visual em movimento.<br>
-        Contato: <a href="mailto:viran.studio@gmail.com">viran.studio@gmail.com</a>
-      </p>
-      <div class="footer__signature">© Viran, 2025</div>
-    </footer>
+
   </main>
+
+  <a class="floating-btn" href="https://calendly.com/vitormoreiran">Agendar</a>
+
+  <script>
+    // Fade-in
+    const fadeObs = new IntersectionObserver(entries => {
+      entries.forEach(e => e.isIntersecting && e.target.classList.add('in-view'));
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade').forEach(el => {
+      el.classList.add('fade-init');
+      fadeObs.observe(el);
+    });
+
+    // Botão dinâmico
+    const root = document.documentElement;
+    const toneObs = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const tone = entry.target.getAttribute('data-tone');
+          const val = getComputedStyle(root).getPropertyValue(tone).trim();
+          root.style.setProperty('--active-tone', val);
+        }
+      });
+    }, { threshold: 0.6 });
+    document.querySelectorAll('.section').forEach(s => toneObs.observe(s));
+  </script>
 </body>
 </html>
