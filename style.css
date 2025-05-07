@@ -95,20 +95,6 @@ html, body {
 /* === RESTANTE DO SEU CSS === */
 /* .section, .layer, .color-layer, .content, .floating-btn etc. */
 
-/* Ícone fixo no canto superior esquerdo */
-.logo-icon {
-  top: 20px;       /* ajuste a distância da borda superior */
-  left: 20px;      /* ajuste a distância da borda esquerda */
-  width: 100px;
-  height: 100px;
-  z-index: 200;    /* acima de tudo, para garantir visibilidade */
-}
-
-.logo-icon img {
-  width: 100%;
-  height: 100%;
-
-}
 
 /* === MAIN & SNAP === */
 main {
