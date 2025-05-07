@@ -1,0 +1,215 @@
+// Fonts
+$font-main: 'Archivo', 'Inter', Arial, sans-serif;
+$font-accent: 'Archivo', 'Inter', sans-serif;
+
+// Colors
+$color-bg: #0a0a0a;
+$color-bg-gradient: linear-gradient(135deg, #0a0a0a 60%, #23243a 100%);
+$color-text: #fff;
+$color-subtext: #e2e2e2;
+$color-accent: #c1ffe9;
+$color-muted: #888;
+$color-card: rgba(22, 22, 22, 0.95);
+$color-btn: #fff;
+$color-btn-text: #181818;
+
+// Global Styles
+body {
+  background: $color-bg-gradient;
+  color: $color-text;
+  font-family: $font-main;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  letter-spacing: -0.01em;
+}
+
+main {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 0 1.2rem;
+}
+
+// Hero Section
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2.5rem;
+  text-align: center;
+
+  &__poster {
+    width: 100%;
+    max-width: 340px;
+    border-radius: 1.2rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 32px rgba(0,0,0,0.55);
+  }
+
+  h1 {
+    font-family: $font-accent;
+    font-size: 2.1rem;
+    letter-spacing: -0.02em;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    line-height: 1.1;
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    color: $color-subtext;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+  }
+}
+
+// Button
+.btn {
+  display: inline-block;
+  padding: 1.1rem 2rem;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 100px;
+  background: $color-btn;
+  color: $color-btn-text;
+  text-decoration: none;
+  letter-spacing: 0.06em;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.25);
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+
+  &:hover,
+  &:focus {
+    background: $color-accent;
+    color: #161616;
+    box-shadow: 0 4px 32px rgba(193,255,233,0.09);
+  }
+
+  &--cta {
+    margin-bottom: 0.5rem;
+  }
+}
+
+// Sections
+section {
+  margin: 2.5rem 0 1.5rem 0;
+
+  h2 {
+    font-family: $font-accent;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: $color-accent;
+  }
+}
+
+// Why Section
+.why ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  li {
+    margin-bottom: 0.7rem;
+    color: $color-subtext;
+    font-size: 1rem;
+    font-weight: 400;
+    position: relative;
+    padding-left: 1.25em;
+    &::before {
+      content: '—';
+      position: absolute;
+      left: 0;
+      color: $color-accent;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+  }
+}
+
+// Services Section
+.services__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.service-card {
+  background: $color-card;
+  border-radius: 0.75rem;
+  padding: 1.1rem 1rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+  h3 {
+    margin: 0 0 0.25rem 0;
+    font-size: 1.05rem;
+    color: $color-accent;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+  }
+  p {
+    margin: 0;
+    color: $color-subtext;
+    font-size: 0.98rem;
+    font-weight: 400;
+  }
+}
+
+// Links Section
+.links {
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem 1.2rem;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    justify-content: start;
+    a {
+      color: $color-accent;
+      text-decoration: underline;
+      font-weight: 700;
+      font-size: 1rem;
+      transition: color 0.18s;
+      &:hover {
+        color: lighten($color-accent, 12%);
+      }
+    }
+  }
+}
+
+// Footer
+.footer {
+  text-align: center;
+  color: $color-muted;
+  font-size: 0.97rem;
+  margin: 2.5rem 0 1.5rem 0;
+  a {
+    color: $color-accent;
+    text-decoration: underline;
+    font-weight: 700;
+  }
+  &__signature {
+    margin-top: 0.7rem;
+    font-size: 0.88rem;
+    color: $color-subtext;
+    opacity: 0.77;
+  }
+}
+
+// Responsive
+@media (min-width: 480px) {
+  main {
+    max-width: 410px;
+  }
+}
+
+@media (min-width: 768px) {
+  main {
+    max-width: 520px;
+  }
+  .hero__poster {
+    max-width: 400px;
+  }
+}
