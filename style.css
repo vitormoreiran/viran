@@ -97,11 +97,10 @@ html, body {
 
 /* Ícone fixo no canto superior esquerdo */
 .logo-icon {
-  position: fixed;
   top: 20px;       /* ajuste a distância da borda superior */
   left: 20px;      /* ajuste a distância da borda esquerda */
-  width: 130px;
-  height: 130px;
+  width: 100px;
+  height: 100px;
   z-index: 200;    /* acima de tudo, para garantir visibilidade */
 }
 
